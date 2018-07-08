@@ -121,7 +121,7 @@ func handlerPost(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	// TODO (student questions) save Post into BT as well
+	// TODO save Post into BT as well
 	tbl := bt_client.Open("post")
 	mut := bigtable.NewMutation()
 	t := bigtable.Now()
